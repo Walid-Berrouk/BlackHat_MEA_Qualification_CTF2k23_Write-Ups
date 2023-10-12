@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    build: .
+    image: authy:app
+    ports:
+      - 1323 
+    environment:
+      FLAG: "BHFlagY{this_is_a_flag}"
+      SECRET: "RANDOM"
